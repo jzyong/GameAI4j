@@ -11,3 +11,6 @@ Modified based on GDX-AI,Client for Unity,backend for java game server.
       <version>0.0.1</version>
     </dependency>
 
+
+#### TODO
+* add document
