@@ -17,7 +17,7 @@
 package com.jzy.ai.steer.util;
 
 
-import com.game.engine.math.Vector;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** The {@code Path} for an agent having path following behavior. A path can be shared by multiple path following behaviors because
  * its status is maintained in a {@link PathParam} local to each behavior.

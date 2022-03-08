@@ -17,10 +17,7 @@
 package com.jzy.ai.steer;
 
 
-import com.game.ai.steer.Proximity;
-import com.game.ai.steer.Steerable;
-import com.game.ai.steer.SteeringBehavior;
-import com.game.engine.math.Vector;
+import com.jzy.javalib.math.geometry.Vector;
 
 /**
  * 组转向行为<br>

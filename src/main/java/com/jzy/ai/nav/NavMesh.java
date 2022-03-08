@@ -1,8 +1,9 @@
 package com.jzy.ai.nav;
 
+import com.jzy.javalib.math.geometry.Vector3;
+
 import java.util.List;
 
-import com.game.engine.math.Vector3;
 
 
 /**

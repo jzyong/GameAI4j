@@ -4,11 +4,11 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.jzy.javalib.math.geometry.Vector3;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.alibaba.fastjson.JSON;
-import com.game.engine.math.Vector3;
 
 /**
  * navmesh寻路三角形网格数据 <br>

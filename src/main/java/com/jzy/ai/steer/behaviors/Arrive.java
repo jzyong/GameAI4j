@@ -17,12 +17,12 @@ package com.jzy.ai.steer.behaviors;
  ******************************************************************************/
 
 
-import com.game.ai.steer.Limiter;
-import com.game.ai.steer.Steerable;
-import com.game.ai.steer.SteeringAcceleration;
-import com.game.ai.steer.SteeringBehavior;
-import com.game.ai.util.Location;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Limiter;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.steer.SteeringAcceleration;
+import com.jzy.ai.steer.SteeringBehavior;
+import com.jzy.ai.util.Location;
+import com.jzy.javalib.math.geometry.Vector;
 
 /**
  * 到达，先加速到最大，到目标点速度在减速到0<br>

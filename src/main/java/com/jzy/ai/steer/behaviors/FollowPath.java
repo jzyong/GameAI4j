@@ -17,12 +17,12 @@
 package com.jzy.ai.steer.behaviors;
 
 
-import com.game.ai.steer.Limiter;
-import com.game.ai.steer.Steerable;
-import com.game.ai.steer.SteeringAcceleration;
-import com.game.ai.steer.util.Path;
-import com.game.ai.util.Location;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Limiter;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.steer.SteeringAcceleration;
+import com.jzy.ai.steer.util.Path;
+import com.jzy.ai.util.Location;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** {@code FollowPath} behavior produces a linear acceleration that moves the agent along the given path. First it calculates the
  * agent location based on the specified prediction time. Then it works out the position of the internal target based on the
@@ -37,7 +37,7 @@ import com.game.engine.math.Vector;
  * route.
  * 
  * @param <T> Type of vector, either 2D or 3D, implementing the {@link Vector} interface
- * @param <P> Type of path parameter implementing the {@link PathParam} interface
+ * @param <P> Type of path parameter implementing the {@link Path.PathParam} interface
  * 
  * @author davebaol */
 public class FollowPath<T extends Vector<T>, P extends Path.PathParam> extends Arrive<T> {

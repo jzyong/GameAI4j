@@ -1,14 +1,14 @@
 package com.jzy.ai.quadtree;
 
-import com.game.ai.nav.polygon.Polygon;
-import com.game.ai.quadtree.polygon.PolygonGuadTree;
+
+import com.jzy.ai.nav.polygon.Polygon;
+import com.jzy.ai.quadtree.polygon.PolygonGuadTree;
 
 /**
  * 功能函数
  * 
  * @author JiangZhiYong
  * @mail 359135103@qq.com
- * @param <K>
  * @param <V>
  */
 public interface Func<V> {

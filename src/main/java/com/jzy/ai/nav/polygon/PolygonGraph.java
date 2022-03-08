@@ -10,15 +10,15 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.TreeMap;
 
+import com.jzy.ai.nav.triangle.Triangle;
+import com.jzy.ai.pfa.Connection;
+import com.jzy.ai.pfa.IndexedGraph;
+import com.jzy.ai.quadtree.QuadTree;
+import com.jzy.ai.quadtree.polygon.PolygonGuadTree;
+import com.jzy.javalib.math.geometry.Vector3;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.game.ai.nav.triangle.Triangle;
-import com.game.ai.pfa.Connection;
-import com.game.ai.pfa.IndexedGraph;
-import com.game.ai.quadtree.QuadTree;
-import com.game.ai.quadtree.polygon.PolygonGuadTree;
-import com.game.engine.math.Vector3;
 
 /**
  * 多边形图对象
@@ -317,7 +317,6 @@ public class PolygonGraph implements IndexedGraph<Polygon> {
 	 * 初始化所有随机点 <br>
 	 * 以空间换时间
 	 * 
-	 * @param polygonGraph
 	 */
 	public void initPathRandomPoint() {
 		int count = 0;
@@ -417,5 +416,7 @@ public class PolygonGraph implements IndexedGraph<Polygon> {
 		return allPoints;
 	}
 
-	
+	public int getScale() {
+		return scale;
+	}
 }

@@ -1,9 +1,10 @@
 package com.jzy.ai.nav.triangle;
 //package com.jzy.game.ai.nav;
 
-import com.game.ai.pfa.Connection;
-import com.game.engine.math.MathUtil;
-import com.game.engine.math.Vector3;
+
+import com.jzy.ai.pfa.Connection;
+import com.jzy.javalib.base.util.MathUtil;
+import com.jzy.javalib.math.geometry.Vector3;
 
 import java.awt.*;
 import java.awt.geom.AffineTransform;
@@ -12,7 +13,6 @@ import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 import java.util.ArrayList;
 import java.util.List;
-
 
 /**
  * 三角形

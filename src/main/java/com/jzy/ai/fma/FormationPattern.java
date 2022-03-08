@@ -17,8 +17,8 @@
 package com.jzy.ai.fma;
 
 
-import com.game.ai.util.Location;
-import com.game.engine.math.Vector;
+import com.jzy.ai.util.Location;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** The {@code FormationPattern} interface represents the shape of a formation and generates the slot offsets, relative to its
  * anchor point. Since formations can be scalable the pattern must be able to determine if a given number of slots is supported.

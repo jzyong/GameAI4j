@@ -17,8 +17,8 @@ package com.jzy.ai.steer;
  ******************************************************************************/
 
 
-import com.game.ai.util.Location;
-import com.game.engine.math.Vector;
+import com.jzy.ai.util.Location;
+import com.jzy.javalib.math.geometry.Vector;
 
 /**可转向对象接口<br>
  * A {@code Steerable} is a {@link Location} that gives access to the character's data required by steering system.

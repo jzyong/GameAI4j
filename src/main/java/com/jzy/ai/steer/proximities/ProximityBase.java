@@ -17,9 +17,9 @@
 package com.jzy.ai.steer.proximities;
 
 
-import com.game.ai.steer.Proximity;
-import com.game.ai.steer.Steerable;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Proximity;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** {@code ProximityBase} is the base class for any concrete proximity based on an iterable collection of agents.
  * 

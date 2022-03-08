@@ -17,10 +17,10 @@
 package com.jzy.ai.steer.util.rays;
 
 
-import com.game.ai.steer.Steerable;
-import com.game.ai.util.Ray;
-import com.game.engine.math.MathUtils;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.util.Ray;
+import com.jzy.javalib.base.util.MathUtil;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** A {@code ParallelSideRayConfiguration} uses two rays parallel to the direction of motion. The rays have the same length and
  * opposite side offset.
@@ -33,7 +33,7 @@ import com.game.engine.math.Vector;
  * @author davebaol */
 public class ParallelSideRayConfiguration<T extends Vector<T>> extends RayConfigurationBase<T> {
 
-	private static final float HALF_PI = MathUtils.PI * 0.5f;
+	private static final float HALF_PI = MathUtil.PI * 0.5f;
 
 	private float length;
 	private float sideOffset;

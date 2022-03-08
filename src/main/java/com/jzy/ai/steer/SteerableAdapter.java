@@ -17,8 +17,8 @@
 package com.jzy.ai.steer;
 
 
-import com.game.ai.util.Location;
-import com.game.engine.math.Vector;
+import com.jzy.ai.util.Location;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** An adapter class for {@link Steerable}. You can derive from this and only override what you are interested in. For example,
  * this comes in handy when you have to create on the fly a target for a particular behavior.

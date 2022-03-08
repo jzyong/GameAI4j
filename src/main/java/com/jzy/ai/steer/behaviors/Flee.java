@@ -17,11 +17,11 @@ package com.jzy.ai.steer.behaviors;
  ******************************************************************************/
 
 
-import com.game.ai.steer.Limiter;
-import com.game.ai.steer.Steerable;
-import com.game.ai.steer.SteeringAcceleration;
-import com.game.ai.util.Location;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Limiter;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.steer.SteeringAcceleration;
+import com.jzy.ai.util.Location;
+import com.jzy.javalib.math.geometry.Vector;
 
 /**逃离到某个坐标点<br>
  * {@code Flee} behavior does the opposite of {@link Seek}. It produces a linear steering force that moves the agent away from a

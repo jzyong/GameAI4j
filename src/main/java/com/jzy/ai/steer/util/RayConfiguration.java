@@ -17,8 +17,8 @@
 package com.jzy.ai.steer.util;
 
 
-import com.game.ai.util.Ray;
-import com.game.engine.math.Vector;
+import com.jzy.ai.util.Ray;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** A {@code RayConfiguration} is a collection of rays typically used for collision avoidance.
  * 

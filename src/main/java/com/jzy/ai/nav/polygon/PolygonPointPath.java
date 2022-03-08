@@ -1,10 +1,11 @@
 
 package com.jzy.ai.nav.polygon;
 
-import com.game.ai.pfa.Connection;
-import com.game.engine.math.Intersector;
-import com.game.engine.math.Plane;
-import com.game.engine.math.Vector3;
+
+import com.jzy.ai.pfa.Connection;
+import com.jzy.javalib.math.geometry.Intersector;
+import com.jzy.javalib.math.geometry.Plane;
+import com.jzy.javalib.math.geometry.Vector3;
 
 import java.util.ArrayList;
 import java.util.Iterator;

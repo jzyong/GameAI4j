@@ -17,8 +17,8 @@
 package com.jzy.ai.fma;
 
 
-import com.game.ai.util.Location;
-import com.game.engine.math.Vector;
+import com.jzy.ai.util.Location;
+import com.jzy.javalib.math.geometry.Vector;
 
 /**
  * 阵型成员<br>

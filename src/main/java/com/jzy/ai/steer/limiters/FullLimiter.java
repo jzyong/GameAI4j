@@ -17,7 +17,7 @@
 package com.jzy.ai.steer.limiters;
 
 
-import com.game.ai.steer.Limiter;
+import com.jzy.ai.steer.Limiter;
 
 /** A {@code FullLimiter} provides the maximum magnitudes of speed and acceleration for both linear and angular components.
  * 

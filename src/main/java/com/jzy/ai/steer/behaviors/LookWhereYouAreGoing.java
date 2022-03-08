@@ -17,11 +17,11 @@ package com.jzy.ai.steer.behaviors;
  ******************************************************************************/
 
 
-import com.game.ai.steer.Limiter;
-import com.game.ai.steer.Steerable;
-import com.game.ai.steer.SteeringAcceleration;
-import com.game.ai.util.Location;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Limiter;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.steer.SteeringAcceleration;
+import com.jzy.ai.util.Location;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** The entire steering framework assumes that the direction a character is facing does not have to be its direction of motion. In
  * many cases, however, you would like the character to face in the direction it is moving. To do this you can manually align the

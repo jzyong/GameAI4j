@@ -4,18 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.jzy.ai.nav.polygon.Polygon;
+import com.jzy.ai.quadtree.*;
+import com.jzy.ai.quadtree.point.PointData;
+import com.jzy.javalib.math.geometry.Vector3;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.game.ai.nav.polygon.Polygon;
-import com.game.ai.quadtree.Data;
-import com.game.ai.quadtree.Func;
-import com.game.ai.quadtree.Node;
-import com.game.ai.quadtree.NodeType;
-import com.game.ai.quadtree.QuadTree;
-import com.game.ai.quadtree.QuadTreeException;
-import com.game.ai.quadtree.point.PointData;
-import com.game.engine.math.Vector3;
 
 
 /**

@@ -17,9 +17,10 @@
 package com.jzy.ai.steer.util.paths;
 
 
-import com.game.ai.steer.util.Path;
-import com.game.engine.math.MathUtil;
-import com.game.engine.math.Vector;
+
+import com.jzy.ai.steer.util.Path;
+import com.jzy.javalib.base.util.MathUtil;
+import com.jzy.javalib.math.geometry.Vector;
 
 import java.util.ArrayList;
 import java.util.List;

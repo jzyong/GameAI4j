@@ -8,11 +8,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 
+import com.jzy.ai.util.MemoryPool;
+import com.jzy.javalib.base.util.TimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.game.engine.struct.MemoryPool;
-import com.game.engine.utils.TimeUtil;
 
 
 /**
@@ -225,8 +225,7 @@ public class MessageDispatcher implements Telegraph {
 	 * Sends an immediate message to all registered listeners, with no extra info.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(0, null, null, msg, null, false)}
+	 *
 	 * 
 	 * @param msg
 	 *            the message code
@@ -239,8 +238,7 @@ public class MessageDispatcher implements Telegraph {
 	 * Sends an immediate message to all registered listeners, with no extra info.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(0, sender, null, msg, null, false)}
+	 *
 	 * 
 	 * @param sender
 	 *            the sender of the telegram
@@ -255,8 +253,7 @@ public class MessageDispatcher implements Telegraph {
 	 * Sends an immediate message to all registered listeners, with no extra info.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(0, sender, null, msg, null, needsReturnReceipt)}
+	 *
 	 * 
 	 * @param sender
 	 *            the sender of the telegram
@@ -275,8 +272,7 @@ public class MessageDispatcher implements Telegraph {
 	 * Sends an immediate message to all registered listeners, with extra info.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(0, null, null, msg, extraInfo, false)}
+	 *
 	 * 
 	 * @param msg
 	 *            the message code
@@ -291,8 +287,7 @@ public class MessageDispatcher implements Telegraph {
 	 * Sends an immediate message to all registered listeners, with extra info.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(0, sender, null, msg, extraInfo, false)}
+	 *
 	 * 
 	 * @param sender
 	 *            the sender of the telegram
@@ -309,9 +304,7 @@ public class MessageDispatcher implements Telegraph {
 	 * Sends an immediate message to all registered listeners, with extra info.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(0, sender, null, msg, extraInfo, needsReturnReceipt)}
-	 * 
+	 *
 	 * @param sender
 	 *            the sender of the telegram
 	 * @param msg
@@ -333,9 +326,7 @@ public class MessageDispatcher implements Telegraph {
 	 * code.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(0, sender, receiver, msg, null, false)}
-	 * 
+	 *
 	 * @param sender
 	 *            the sender of the telegram
 	 * @param receiver
@@ -355,9 +346,7 @@ public class MessageDispatcher implements Telegraph {
 	 * code.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(0, sender, receiver, msg, null, needsReturnReceipt)}
-	 * 
+	 *
 	 * @param sender
 	 *            the sender of the telegram
 	 * @param receiver
@@ -381,9 +370,7 @@ public class MessageDispatcher implements Telegraph {
 	 * code.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(0, sender, receiver, msg, extraInfo, false)}
-	 * 
+	 *
 	 * @param sender
 	 *            the sender of the telegram
 	 * @param receiver
@@ -405,9 +392,7 @@ public class MessageDispatcher implements Telegraph {
 	 * code.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(0, sender, receiver, msg, extraInfo, needsReturnReceipt)}
-	 * 
+	 *
 	 * @param sender
 	 *            the sender of the telegram
 	 * @param receiver
@@ -433,9 +418,7 @@ public class MessageDispatcher implements Telegraph {
 	 * extra info.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(delay, null, null, msg, null, null)}
-	 * 
+	 *
 	 * @param delay
 	 *            the delay in seconds
 	 * @param msg
@@ -450,9 +433,7 @@ public class MessageDispatcher implements Telegraph {
 	 * extra info.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(delay, sender, null, msg, null, false)}
-	 * 
+	 *
 	 * @param delay
 	 *            the delay in seconds
 	 * @param sender
@@ -469,9 +450,7 @@ public class MessageDispatcher implements Telegraph {
 	 * extra info.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(delay, sender, null, msg, null, needsReturnReceipt)}
-	 * 
+	 *
 	 * @param delay
 	 *            the delay in seconds
 	 * @param sender
@@ -492,9 +471,7 @@ public class MessageDispatcher implements Telegraph {
 	 * extra info.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(delay, null, null, msg, extraInfo, false)}
-	 * 
+	 *
 	 * @param delay
 	 *            the delay in seconds
 	 * @param msg
@@ -511,9 +488,7 @@ public class MessageDispatcher implements Telegraph {
 	 * extra info.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(delay, sender, null, msg, extraInfo, false)}
-	 * 
+	 *
 	 * @param delay
 	 *            the delay in seconds
 	 * @param sender
@@ -532,9 +507,7 @@ public class MessageDispatcher implements Telegraph {
 	 * extra info.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(delay, sender, null, msg, extraInfo, needsReturnReceipt)}
-	 * 
+	 *
 	 * @param delay
 	 *            the delay in seconds
 	 * @param sender
@@ -558,9 +531,7 @@ public class MessageDispatcher implements Telegraph {
 	 * specified message code.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(delay, sender, receiver, msg, null, false)}
-	 * 
+	 *
 	 * @param delay
 	 *            the delay in seconds
 	 * @param sender
@@ -582,9 +553,7 @@ public class MessageDispatcher implements Telegraph {
 	 * specified message code.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(delay, sender, receiver, msg, null, needsReturnReceipt)}
-	 * 
+	 *
 	 * @param delay
 	 *            the delay in seconds
 	 * @param sender
@@ -610,9 +579,7 @@ public class MessageDispatcher implements Telegraph {
 	 * specified message code.
 	 * <p>
 	 * This is a shortcut method for
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object, boolean)
-	 * dispatchMessage(delay, sender, receiver, msg, extraInfo, false)}
-	 * 
+	 *
 	 * @param delay
 	 *            the delay in seconds
 	 * @param sender
@@ -706,11 +673,11 @@ public class MessageDispatcher implements Telegraph {
 	 * <p>
 	 * This method must be called regularly from inside the main game loop to
 	 * facilitate the correct and timely dispatch of any delayed messages. Notice
-	 * that the message dispatcher internally calls {@link Timepiece#getTime()
-	 * GdxAI.getTimepiece().getTime()} to get the current AI time and properly
+	 * that the message dispatcher internally calls  Timepiece#getTime()
+	 * GdxAI.getTimepiece().getTime() to get the current AI time and properly
 	 * dispatch delayed messages. This means that
 	 * <ul>
-	 * <li>if you forget to {@link Timepiece#update(float) update the timepiece} the
+	 * <li>if you forget to Timepiece#update(float) update the timepiece the
 	 * delayed messages won't be dispatched.</li>
 	 * <li>ideally the timepiece should be updated before the message
 	 * dispatcher.</li>
@@ -774,8 +741,8 @@ public class MessageDispatcher implements Telegraph {
 	/**
 	 * 执行电报<br>
 	 * This method is used by
-	 * {@link #dispatchMessage(float, Telegraph, Telegraph, int, Object)
-	 * dispatchMessage} for immediate telegrams and {@link #update(float) update}
+	 * dispatchMessage(float, Telegraph, Telegraph, int, Object)
+	 * dispatchMessage for immediate telegrams and update(float) update
 	 * for delayed telegrams. It first calls the message handling method of the
 	 * receiving agents with the specified telegram then returns the telegram to the
 	 * pool.

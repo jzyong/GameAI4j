@@ -17,8 +17,8 @@
 package com.jzy.ai.steer.behaviors;
 
 
-import com.game.ai.steer.*;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.*;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** {@code Cohesion} is a group behavior producing a linear acceleration that attempts to move the agent towards the center of mass
  * of the agents in its immediate area defined by the given {@link Proximity}. The acceleration is calculated by first iterating

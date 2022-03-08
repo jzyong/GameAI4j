@@ -17,8 +17,9 @@
 package com.jzy.ai.steer.proximities;
 
 
-import com.game.ai.steer.Steerable;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Proximity;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** {@code InfiniteProximity} is likely the simplest type of Proximity one can imagine. All the agents contained in the specified
  * list are considered neighbors of the owner, excluded the owner itself (if it is part of the list).
@@ -36,7 +37,7 @@ public class InfiniteProximity<T extends Vector<T>> extends ProximityBase<T> {
 	}
 
 	@Override
-	public int findNeighbors (ProximityCallback<T> callback) {
+	public int findNeighbors (Proximity.ProximityCallback<T> callback) {
 		int neighborCount = 0;
 		for (Steerable<T> currentAgent : agents) {
 			// Make sure the agent being examined isn't the owner

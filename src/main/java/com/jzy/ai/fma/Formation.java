@@ -16,11 +16,13 @@
 
 package com.jzy.ai.fma;
 
-import com.game.ai.util.Location;
-import com.game.engine.math.Matrix3;
-import com.game.engine.math.Vector;
-import com.game.engine.math.Vector2;
-import com.game.engine.math.Vector3;
+
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.util.Location;
+import com.jzy.javalib.math.geometry.Matrix3;
+import com.jzy.javalib.math.geometry.Vector;
+import com.jzy.javalib.math.geometry.Vector2;
+import com.jzy.javalib.math.geometry.Vector3;
 
 import java.util.ArrayList;
 import java.util.List;

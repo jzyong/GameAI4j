@@ -16,8 +16,9 @@
 
 package com.jzy.ai.fsm;
 
-import com.game.ai.msg.Telegram;
-import com.game.ai.msg.Telegraph;
+
+import com.jzy.ai.msg.Telegram;
+import com.jzy.ai.msg.Telegraph;
 
 /**
  * 状态机接口<br>

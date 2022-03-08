@@ -17,9 +17,9 @@
 package com.jzy.ai.steer.util.rays;
 
 
-import com.game.ai.steer.Steerable;
-import com.game.ai.util.Ray;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.util.Ray;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** A {@code CentralRayWithWhiskersConfiguration} uses a long central ray and two shorter whiskers.
  * <p>

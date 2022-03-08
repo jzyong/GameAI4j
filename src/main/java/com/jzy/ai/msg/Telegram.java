@@ -1,7 +1,7 @@
 
 package com.jzy.ai.msg;
 
-import com.game.engine.struct.IMemoryObject;
+import com.jzy.ai.util.IMemoryObject;
 
 /**电报 
  * <br>

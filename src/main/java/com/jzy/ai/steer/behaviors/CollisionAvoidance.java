@@ -17,8 +17,8 @@
 package com.jzy.ai.steer.behaviors;
 
 
-import com.game.ai.steer.*;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.*;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** {@code CollisionAvoidance} behavior steers the owner to avoid obstacles lying in its path. An obstacle is any object that can be
  * approximated by a circle (or sphere, if you are working in 3D).

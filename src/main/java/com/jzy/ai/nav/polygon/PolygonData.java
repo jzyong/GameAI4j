@@ -1,12 +1,13 @@
 package com.jzy.ai.nav.polygon;
 
+import com.jzy.ai.nav.NavMeshData;
+import com.jzy.javalib.math.geometry.Vector3;
+
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import com.game.ai.nav.NavMeshData;
-import com.game.engine.math.Vector3;
 
 /**
  * 多边形数据

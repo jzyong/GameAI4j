@@ -11,9 +11,9 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.alibaba.fastjson.JSON;
-import com.game.ai.pfa.Connection;
-import com.game.engine.math.Intersector;
-import com.game.engine.math.Vector3;
+import com.jzy.ai.pfa.Connection;
+import com.jzy.javalib.math.geometry.Intersector;
+import com.jzy.javalib.math.geometry.Vector3;
 
 /**
  * 多边形,用于navmesh寻路
@@ -359,11 +359,15 @@ public class Polygon implements Shape {
 		return new PolygonIterator(this, at);
 	}
 
-	public void print() {
-		System.out.println("序号:" + index);
-		System.out.println("坐标:" + points.toString());
-		System.out.println("序号:" + JSON.toJSONString(vectorIndexs));
-		System.out.println();
+	public String print() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("\r\n");
+		sb.append("序号:" + index);
+		sb.append("\r\n");
+		sb.append("坐标:" + points.toString());
+		sb.append("\r\n");
+		sb.append("顶点序号:" + JSON.toJSONString(vectorIndexs));
+		return sb.toString();
 	}
 
 	public class PolygonIterator implements PathIterator {

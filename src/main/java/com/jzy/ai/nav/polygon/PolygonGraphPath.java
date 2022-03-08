@@ -1,8 +1,9 @@
 package com.jzy.ai.nav.polygon;
 
-import com.game.ai.pfa.Connection;
-import com.game.ai.pfa.DefaultGraphPath;
-import com.game.engine.math.Vector3;
+
+import com.jzy.ai.pfa.Connection;
+import com.jzy.ai.pfa.DefaultGraphPath;
+import com.jzy.javalib.math.geometry.Vector3;
 
 /**
  * 多边形路径点

@@ -17,9 +17,9 @@
 package com.jzy.ai.fma.patterns;
 
 
-import com.game.ai.util.Location;
-import com.game.engine.math.MathUtils;
-import com.game.engine.math.Vector;
+import com.jzy.ai.util.Location;
+import com.jzy.javalib.base.util.MathUtil;
+import com.jzy.javalib.math.geometry.Vector;
 
 /**
  * 攻击圈阵型<br>
@@ -41,7 +41,7 @@ public class OffensiveCircleFormationPattern<T extends Vector<T>> extends Defens
 	@Override
 	public Location<T> calculateSlotLocation (Location<T> outLocation, int slotNumber) {
 		super.calculateSlotLocation(outLocation, slotNumber);
-		outLocation.setOrientation(outLocation.getOrientation() + MathUtils.PI);
+		outLocation.setOrientation(outLocation.getOrientation() + MathUtil.PI);
 		return outLocation;
 	}
 

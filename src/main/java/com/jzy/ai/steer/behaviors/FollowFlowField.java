@@ -16,11 +16,12 @@
 
 package com.jzy.ai.steer.behaviors;
 
-import com.game.ai.steer.Limiter;
-import com.game.ai.steer.Steerable;
-import com.game.ai.steer.SteeringAcceleration;
-import com.game.ai.steer.SteeringBehavior;
-import com.game.engine.math.Vector;
+
+import com.jzy.ai.steer.Limiter;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.steer.SteeringAcceleration;
+import com.jzy.ai.steer.SteeringBehavior;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** The {@code FollowFlowField} behavior produces a linear acceleration that tries to align the motion of the owner with the local
  * tangent of a flow field. The flow field defines a mapping from a location in space to a flow vector. Any flow field can be used

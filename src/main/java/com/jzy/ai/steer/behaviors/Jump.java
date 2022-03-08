@@ -17,11 +17,11 @@
 package com.jzy.ai.steer.behaviors;
 
 
-import com.game.ai.steer.Limiter;
-import com.game.ai.steer.Steerable;
-import com.game.ai.steer.SteerableAdapter;
-import com.game.ai.steer.SteeringAcceleration;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Limiter;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.steer.SteerableAdapter;
+import com.jzy.ai.steer.SteeringAcceleration;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** First the {@code Jump} behavior calculates the linear velocity required to achieve the jump. If the calculated velocity doesn't
  * exceed the maximum linear velocity the jump is achievable; otherwise it's not. In either cases, the given callback gets

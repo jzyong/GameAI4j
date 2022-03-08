@@ -17,12 +17,12 @@
 package com.jzy.ai.steer.behaviors;
 
 
-import com.game.ai.steer.Limiter;
-import com.game.ai.steer.Proximity;
-import com.game.ai.steer.Steerable;
-import com.game.ai.steer.SteeringAcceleration;
-import com.game.ai.util.Location;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Limiter;
+import com.jzy.ai.steer.Proximity;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.steer.SteeringAcceleration;
+import com.jzy.ai.util.Location;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** This behavior attempts to position a owner so that an obstacle is always between itself and the agent (the hunter) it's trying
  * to hide from. First the distance to each of these obstacles is determined. Then the owner uses the arrive behavior to steer

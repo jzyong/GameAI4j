@@ -1,15 +1,15 @@
 package com.jzy.ai.nav.polygon;
 
 import com.alibaba.fastjson.JSON;
-import com.game.ai.pfa.Connection;
-import com.game.engine.math.Vector3;
+import com.jzy.ai.pfa.Connection;
+import com.jzy.javalib.math.geometry.Vector3;
 
 /**
  * 多边形共享边
  * @author JiangZhiYong
  * @mail 359135103@qq.com
  */
-public class PolygonEdge implements Connection<Polygon>{
+public class PolygonEdge implements Connection<Polygon> {
 	
 	/** 右顶点 */
 	public Vector3 rightVertex;

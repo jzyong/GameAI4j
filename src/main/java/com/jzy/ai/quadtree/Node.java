@@ -3,8 +3,8 @@ package com.jzy.ai.quadtree;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.game.ai.nav.polygon.Polygon;
-import com.game.engine.math.Vector3;
+import com.jzy.ai.nav.polygon.Polygon;
+import com.jzy.javalib.math.geometry.Vector3;
 
 
 /**

@@ -1,6 +1,7 @@
 package com.jzy.ai.nav.polygon;
 
-import com.game.ai.pfa.Heuristic;
+
+import com.jzy.ai.pfa.Heuristic;
 
 /**
  * 多边形消耗计算

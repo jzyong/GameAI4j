@@ -17,10 +17,10 @@
 package com.jzy.ai.steer.util.rays;
 
 
-import com.game.ai.steer.Steerable;
-import com.game.ai.steer.util.RayConfiguration;
-import com.game.ai.util.Ray;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.steer.util.RayConfiguration;
+import com.jzy.ai.util.Ray;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** {@code RayConfigurationBase} is the base class for concrete ray configurations having a fixed number of rays.
  * 

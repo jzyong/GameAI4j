@@ -17,13 +17,13 @@ package com.jzy.ai.steer.behaviors;
  ******************************************************************************/
 
 
-import com.game.ai.steer.Limiter;
-import com.game.ai.steer.Steerable;
-import com.game.ai.steer.SteeringAcceleration;
-import com.game.ai.steer.SteeringBehavior;
-import com.game.ai.util.ArithmeticUtils;
-import com.game.ai.util.Location;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Limiter;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.steer.SteeringAcceleration;
+import com.jzy.ai.steer.SteeringBehavior;
+import com.jzy.ai.util.ArithmeticUtils;
+import com.jzy.ai.util.Location;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** {@code ReachOrientation} tries to align the owner to the target. It pays no attention to the position or velocity of the owner
  * or target. This steering behavior does not produce any linear acceleration; it only responds by turning.

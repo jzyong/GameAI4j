@@ -17,9 +17,9 @@ package com.jzy.ai.steer.behaviors;
  ******************************************************************************/
 
 
-import com.game.ai.steer.Limiter;
-import com.game.ai.steer.Steerable;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Limiter;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.javalib.math.geometry.Vector;
 
 /**
  * 逃离<br>

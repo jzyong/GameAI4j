@@ -17,7 +17,7 @@ package com.jzy.ai.steer;
  ******************************************************************************/
 
 
-import com.game.engine.math.Vector;
+import com.jzy.javalib.math.geometry.Vector;
 
 /**转向请求<br>
  *

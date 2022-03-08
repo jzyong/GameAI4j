@@ -17,7 +17,11 @@
 package com.jzy.ai.steer;
 
 
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.behaviors.Alignment;
+import com.jzy.ai.steer.behaviors.BlendedSteering;
+import com.jzy.ai.steer.behaviors.Cohesion;
+import com.jzy.ai.steer.behaviors.Separation;
+import com.jzy.javalib.math.geometry.Vector;
 
 /**
  * 临近关系<br>
@@ -31,7 +35,7 @@ import com.game.engine.math.Vector;
  * {@link Separation separation}, {@link Alignment alignment}, and {@link Cohesion cohesion}. The three behaviors are typically
  * combined through a {@link BlendedSteering blended steering}. This works okay but, because of the limited view distance of a
  * character, it's possible for an agent to become isolated from its flock. If this happens, it will just sit still and do
- * nothing. To prevent this from happening, you usually add in the {@link Wander wander} behavior too. This way, all the agents
+ * nothing. To prevent this from happening, you usually add in the  Wander wander behavior too. This way, all the agents
  * keep moving all the time. Tweaking the magnitudes of each of the contributing behaviors will give you different effects such as
  * shoals of fish, loose swirling flocks of birds, or bustling close-knit herds of sheep.
  * <p>
@@ -42,10 +46,10 @@ import com.game.engine.math.Vector;
  * <ul>
  * <li>Sharing a {@code Proximity} instance among group behaviors having the same owner can save a little time determining the
  * neighbors only once from inside the {@code findNeighbors} method. Especially, {@code Proximity} implementation classes can use
- * {@link Timepiece#getTime() GdxAI.getTimepiece().getTime()} to calculate neighbors only once per frame (assuming delta time is
+ *  Timepiece#getTime() GdxAI.getTimepiece().getTime() to calculate neighbors only once per frame (assuming delta time is
  * always greater than 0, if time has changed the frame has changed too). This means that
  * <ul>
- * <li>if you forget to {@link Timepiece#update(float) update the timepiece} on each frame the proximity instance will be
+ * <li>if you forget to Timepiece#update(float) update the timepiece on each frame the proximity instance will be
  * calculated only the very first time, which is not what you want of course.</li>
  * <li>ideally the timepiece should be updated before the proximity is updated by the {@link #findNeighbors(ProximityCallback)}
  * method.</li>

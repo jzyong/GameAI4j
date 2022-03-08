@@ -1,7 +1,8 @@
 package com.jzy.ai.quadtree.point;
 
-import com.game.ai.quadtree.Data;
-import com.game.engine.math.Vector3;
+
+import com.jzy.ai.quadtree.Data;
+import com.jzy.javalib.math.geometry.Vector3;
 
 /**
  * 坐标点数据结构

@@ -17,15 +17,18 @@
 package com.jzy.ai.steer.behaviors;
 
 
-import com.game.ai.steer.Limiter;
-import com.game.ai.steer.Steerable;
-import com.game.ai.steer.SteeringAcceleration;
-import com.game.ai.steer.SteeringBehavior;
-import com.game.ai.steer.util.RayConfiguration;
-import com.game.ai.util.Collision;
-import com.game.ai.util.Ray;
-import com.game.ai.util.RaycastCollisionDetector;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Limiter;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.steer.SteeringAcceleration;
+import com.jzy.ai.steer.SteeringBehavior;
+import com.jzy.ai.steer.util.RayConfiguration;
+import com.jzy.ai.steer.util.rays.CentralRayWithWhiskersConfiguration;
+import com.jzy.ai.steer.util.rays.ParallelSideRayConfiguration;
+import com.jzy.ai.steer.util.rays.SingleRayConfiguration;
+import com.jzy.ai.util.Collision;
+import com.jzy.ai.util.Ray;
+import com.jzy.ai.util.RaycastCollisionDetector;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** With the {@code RaycastObstacleAvoidance} the moving agent (the owner) casts one or more rays out in the direction of its
  * motion. If these rays collide with an obstacle, then a target is created that will avoid the collision, and the owner does a

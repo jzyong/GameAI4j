@@ -17,7 +17,7 @@
 package com.jzy.ai.fma;
 
 
-import com.game.engine.math.Vector;
+import com.jzy.javalib.math.geometry.Vector;
 
 /**
  * 槽位分配<br>

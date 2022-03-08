@@ -17,7 +17,7 @@
 package com.jzy.ai.steer.limiters;
 
 
-import com.game.ai.steer.Limiter;
+import com.jzy.ai.steer.Limiter;
 
 /** A {@code NullLimiter} always throws {@link UnsupportedOperationException}. Typically it's used as the base class of partial or
  * immutable limiters.

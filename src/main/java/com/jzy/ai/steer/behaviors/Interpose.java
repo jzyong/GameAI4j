@@ -17,11 +17,11 @@
 package com.jzy.ai.steer.behaviors;
 
 
-import com.game.ai.steer.Limiter;
-import com.game.ai.steer.Steerable;
-import com.game.ai.steer.SteeringAcceleration;
-import com.game.ai.util.Location;
-import com.game.engine.math.Vector;
+import com.jzy.ai.steer.Limiter;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.steer.SteeringAcceleration;
+import com.jzy.ai.util.Location;
+import com.jzy.javalib.math.geometry.Vector;
 
 /** {@code Interpose} behavior produces a steering force that moves the owner to a point along the imaginary line connecting two
  * other agents. A bodyguard taking a bullet for his employer or a soccer player intercepting a pass are examples of this type of

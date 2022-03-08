@@ -17,11 +17,13 @@
 package com.jzy.ai.steer.behaviors;
 
 
-import com.game.ai.steer.Limiter;
-import com.game.ai.steer.Steerable;
-import com.game.ai.steer.SteeringAcceleration;
-import com.game.ai.steer.SteeringBehavior;
-import com.game.engine.math.Vector;
+
+import com.jzy.ai.steer.Limiter;
+import com.jzy.ai.steer.Steerable;
+import com.jzy.ai.steer.SteeringAcceleration;
+import com.jzy.ai.steer.SteeringBehavior;
+import com.jzy.ai.steer.limiters.NullLimiter;
+import com.jzy.javalib.math.geometry.Vector;
 
 import java.util.ArrayList;
 import java.util.List;
