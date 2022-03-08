@@ -1,0 +1,26 @@
+﻿# java文件
+*.class
+*.jar
+*.log
+*.war
+*.zip
+*.tar.gz
+*.rar
+
+
+# ide工具文件
+.classpath
+.project
+.settings
+/.idea/
+*.iml
+*~
+.DS_Store
+
+
+# 项目文件
+log/
+target/
+**/target/
+
+
