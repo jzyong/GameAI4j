@@ -17,6 +17,9 @@
       <version>0.0.1</version>
     </dependency>
 
+#### Document
+* [Unity export NavMesh](https://github.com/jzyong/NavMeshDemo/blob/master/Documents/Guide.md)
+
 
 #### TODO
 * add document
