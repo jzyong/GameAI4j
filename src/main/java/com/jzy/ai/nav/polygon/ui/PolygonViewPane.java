@@ -188,13 +188,14 @@ public class PolygonViewPane extends JPanel {
 			sectorOriginPoint.y = 0;
 		}
 		sectorComparePoint = sectorOriginPoint.unityTranslate(sectorOriginPoint.y, 60);
-
-		if (sectorOriginPoint.isInSector(dir, sectorComparePoint, 80f, 60f)) {
+		var sectorCompareFill=new Ellipse2D.Double(sectorComparePoint.x - r, sectorComparePoint.z - r, 2 * r, 2 * r);
+		// 注意 isInSector方法将sectorComparePoint坐标改变了
+        if (sectorOriginPoint.isInSector(dir, sectorComparePoint, 80f, 60f)) {
 			g.setColor(Color.RED);
 		} else {
 			g.setColor(Color.BLUE);
 		}
-		g.fill(new Ellipse2D.Double(sectorComparePoint.x - r, sectorComparePoint.z - r, 2 * r, 2 * r));
+		g.fill(sectorCompareFill);
 
 		// 渲染N边形
 		g.setColor(triangleColor);
