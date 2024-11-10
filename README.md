@@ -1,5 +1,5 @@
 # GameAI4j
-#### Description
+### Description
 &emsp;&emsp;&emsp;&emsp;Modified based on GDX-AI,Client for Unity,backend for java game server.Add extra features:
 * [Behavior-tree xml config](https://github.com/jzyong/GameAI4j/tree/main/src/main/java/com/jzy/ai/btree)
 * [Unity navmesh polygon or triangle pathfinding](https://github.com/jzyong/GameAI4j/tree/main/src/main/java/com/jzy/ai/nav)
@@ -9,7 +9,7 @@
 
 
 
-#### Installation
+### Installation
 
     <dependency>
       <groupId>com.jzy.ai</groupId>
@@ -17,9 +17,9 @@
       <version>0.0.1</version>
     </dependency>
 
-#### Document
+### Document
 * [Unity export NavMesh](https://github.com/jzyong/NavMeshDemo/blob/master/Documents/Guide.md)
+* [Video presentation (YouTube)](https://youtu.be/xT1FImnYk-E)
+* [视频演示(B站)](https://www.bilibili.com/video/BV19pmiYSEDX)
 
-
-#### TODO
-* add document
+### TODO
