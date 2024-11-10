@@ -19,7 +19,7 @@
 
 ### Document
 * [Unity export NavMesh](https://github.com/jzyong/NavMeshDemo/blob/master/Documents/Guide.md)
-* [Video presentation (YouTube)](https://youtu.be/xT1FImnYk-E)
-* [视频演示(B站)](https://www.bilibili.com/video/BV19pmiYSEDX)
+* Video presentation [YouTube](https://youtu.be/xT1FImnYk-E)  &emsp;&emsp; [B站](https://www.bilibili.com/video/BV19pmiYSEDX)
+* [Game presentation](https://www.bilibili.com/video/BV1Kv411a7yk)
 
 ### TODO
